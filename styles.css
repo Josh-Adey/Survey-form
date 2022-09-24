@@ -1,0 +1,193 @@
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+    background: var(--color-darkblue-alpha);
+    display: flex;
+    
+    background-image: linear-gradient(
+         115deg, rgba(58, 58, 158, 0.8),
+          rgba(136, 136, 206, 0.7) ),
+           url(nasa3.jpg);
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem; 
+    color: var(--color-white);
+    margin: 0;
+    }
+.container{
+  width: 54%;
+}
+
+.header{
+  display: block;
+  margin: 4.2rem auto 1rem auto;
+  width: 100%;
+  
+}
+
+#survey-form{
+  margin-top: 2rem;
+  background-color: var(--color-darkblue-alpha);
+  padding: 2.5rem;
+  border-radius: 0.3rem;
+}
+
+.form-group{
+  display: block;
+  width: 100%;
+}
+
+     #title{
+      text-align: center;
+      display: block;
+      font-weight: 400;
+      font-size: 1.6em;
+      margin-bottom: 0.8rem;
+      line-height: 1.2rem;
+      
+    }
+
+    #description{
+      font-style: italic;
+      text-align: center;
+      margin: 0;
+    }
+
+    #survey-form{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    label{
+      display: block;
+      margin-bottom: 1em;
+      width: 100%;
+    }
+
+    
+    
+   
+
+    #name, #email, #number {
+      display: block;
+      justify-content: center;
+      width: 100%;
+      padding: 1rem;
+      height: 2rem;
+      border-radius: 0.3rem;
+      margin-top: 0.4rem;
+    }
+    #submit{
+      background-color: var(--color-green);
+      width: 100%;
+      border-radius: 0.4rem;
+      height: 2rem;
+      color: var(--color-white);
+    }
+
+    #dropdown{
+      width: 100%;
+      height: 2rem;
+      padding: 1px 2px;
+      margin-top: 0.3rem;
+    }
+
+    @media screen and (max-width: 375px) {
+      .container{
+        width: 80%;
+      }
+
+      .header{
+        display: block;
+        margin-bottom: 0.8rem;
+        margin-top: 1.5rem;
+        
+      }
+
+
+      #title{
+        text-align: center;
+        display: block;
+        font-weight: 200;
+        font-size: 1.2em;
+        margin-bottom: 0.5rem;
+        line-height: 0.8rem; 
+      }
+
+      #survey-form{
+        margin-top: 0.2rem;
+        background-color: var(--color-darkblue-alpha);
+        padding: 1rem;
+        border-radius: 0.3rem;
+      }
+
+      p{
+        font-family: 'poppins', sans-serif;
+        font-size: 1.025rem;
+        margin-bottom: 0.4rem;
+      }
+
+      label{
+        display: block;
+        margin-bottom: 0.5em;
+        width: 100%;
+        font-size: 0.8em;
+      }
+  
+
+      #name, #email, #number {
+        display: block;
+        justify-content: center;
+        width: 100%;
+        padding: 1rem;
+        height: 1rem;
+        border-radius: 0.3rem;
+        margin-bottom: 0.5rem;
+      }
+
+
+      #fav-feature{
+        margin-top: 1.5rem;
+      }
+      #dropdown{
+        border-radius: 0.3rem;
+      }
+
+      .check label{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+      }
+
+      #comment{
+        width: 100%;
+        height: 4rem;
+        border-radius: 0.3rem;
+        margin-bottom: 0.5rem;
+        
+      }
+
+      #submit{
+        background-color: var(--color-green);
+        width: 100%;
+        border-radius: 0.4rem;
+        height: 2rem;
+        color: var(--color-white);
+        font-size: 0.8em;
+        margin-top: 1rem;
+      }
+    }
