@@ -25,4 +25,4 @@ Users should be able to:
 - view full content of the webpage on any screensize at a glance
 
 ### Links
-- [live website preview] (https://josh-adey.github.io/Survey-form/)
+- [live website preview](https://josh-adey.github.io/Survey-form/)
